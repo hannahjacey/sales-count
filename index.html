@@ -80,25 +80,44 @@
         </button>    
     </div>        
 
-    <div class="modal" id="number" role="dialog" aria-labeledby="number" aria-hidden="true">
-        
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <div class="row">
-                        <div class="col-6">
-                            Sold Retail
-                        </div>
-                        <div class="col-6">
-                            Sold Commercial
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-        
+    <!-- First modal dialog -->
+<div class="modal fade" id="number" aria-hidden="true" aria-labelledby="number" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="number">Modal 1</h5>
+        <button type="button" class="btn-close" data-mdb-ripple-init data-mdb-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Show a second modal and hide this one with the button below.
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" data-mdb-ripple-init data-mdb-target="#commModal" data-mdb-modal-init data-mdb-dismiss="modal">
+          Open second modal
+        </button>
+      </div>
     </div>
+  </div>
+</div>
+<!-- Second modal dialog -->
+<div class="modal fade" id="commModal" aria-hidden="true" aria-labelledby="commModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="commModal">Modal 2</h5>
+        <button type="button" class="btn-close" data-mdb-ripple-init data-mdb-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Hide this modal and show the first with the button below.
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" data-mdb-ripple-init data-mdb-target="#number" data-mdb-modal-init>
+          Back to first
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
 
      
        
