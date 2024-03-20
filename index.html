@@ -84,51 +84,33 @@
 
           
 <div class="container-fluid" style=" width : 300px;">
-    <a class="btn border border-success" data-mdb-ripple data-mdb-modal data-mdb-target="#exampleModalToggle1" role="button">
+    <a class="btn border border-success" data-mdb-ripple data-mdb-modal data-mdb-target="modal1" role="button">
         <i class="fa-solid fa-lines-leaning"></i>
             Launch Active Count
         <i class="fa-solid fa-lines-leaning fa-flip-horizontal"></i>
     </a>
 </div> 
+<div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1" aria-hidden="true">
+    <div class="modal-dialog dialog-centered" role="document">
+        <div class="modal-header">
+            <h3 class="modal-title">Retail Total</h3>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close.">
+            <span aria-hidden="true">X</span>
+            </button>
+        </div>
+        
+        <div class="modal-body">
+            <span aria-hidden="true"><i class="fa-regular fa-circle fa-beat"></i></span>
+            <div class="fa-4x">
+            <span class="fa-layers fa-fw">
+               <i class="fa-regular fa-circle fa-beat"></i>
+                <i class="fa-inverse fa-solid" data-fa-transform="shrink-6">4</i>
+            </span>
+        </div>
+            
+    </div>
+</div>
 
-<!-- First modal dialog -->
-<div class="modal fade" id="exampleModalToggle1" aria-hidden="true" aria-labelledby="exampleModalToggle1" tabindex="-1">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalToggle1">Modal 1</h5>
-        <button type="button" class="btn-close" data-mdb-ripple data-mdb-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        Show a second modal and hide this one with the button below.
-      </div>
-      <div class="modal-footer">
-        <button class="btn btn-primary" data-mdb-ripple data-mdb-target="#exampleModalToggle22" data-mdb-modal data-mdb-dismiss="modal">
-          Open second modal
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Second modal dialog -->
-<div class="modal fade" id="exampleModalToggle22" aria-hidden="true" aria-labelledby="exampleModalToggle22" tabindex="-1">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalToggle22">Modal 2</h5>
-        <button type="button" class="btn-close" data-mdb-ripple data-mdb-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        Hide this modal and show the first with the button below.
-      </div>
-      <div class="modal-footer">
-        <button class="btn btn-primary" data-mdb-ripple data-mdb-target="#exampleModalToggle1" data-mdb-modal>
-          Back to first
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
      
        
 
