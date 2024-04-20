@@ -1,7 +1,7 @@
 const f = document.getElementById('form');
 const q = document.getElementById('query');
 const google = 'https://www.google.com/search?q=site%3A+';
-const site = 'https://www.hannahjacey.github.io/sales-count/commAPRIL2024.html';
+const site = 'https://www.hannahjacey.github.io/sales-count/';
                     
 function submitted(event) {
       event.preventDefault();
